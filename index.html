@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>YouCode School - Classroom Void | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        padding: 2.5%;
+        font-size: 1vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: beige;
+      }
+      h1 {
+        font-size: 6em;
+        font-weight: normal;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 4.5em;
+      }
+      .cards{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        gap: 5%;
+      }
+      .card {
+        border-radius: 2em;
+        border-top: 2em solid red;
+        background-color: white;
+        display: grid;
+        padding: 5%;
+        grid-template-rows: 1.5fr 1.5fr 7fr;
+        width: 90%;
+        aspect-ratio: 1;
+        height: auto;
+        box-shadow: 0 0 2em gray;
+      }
+      .card-title {
+        font-size: 4em;
+        font-weight: 1000;
+      }
+      .card-para {
+        font-size: 3em;
+      }
+      .card-image {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .card-image>img{
+        height: 20em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Reliable, efficient delivery <br />
+      <strong>Powered by Technology</strong>
+    </h1>
+
+    <p>
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your project is successful
+    </p>
+    <div class="cards">
+    <div class="card">
+      <div class="card-title">Supervisor</div>
+      <div class="card-para">
+        Monitors activity to identify project roadblocks
+      </div>
+      <div class="card-image">
+        <img src="images/icon-supervisor.svg" alt="Supervisor" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Team Builder</div>
+      <div class="card-para">
+        Scans our talent network to create the optimal team for your project
+      </div>
+      <div class="card-image">
+        <img src="images/icon-team-builder.svg" alt="Supervisor" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Karma</div>
+      <div class="card-para">
+        Regularly evaluates our talent to ensure quality
+      </div>
+      <div class="card-image">
+        <img src="images/icon-karma.svg" alt="Supervisor" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Calculator</div>
+      <div class="card-para">
+        Uses data from past projects to provide better delivery estimates
+      </div>
+      <div class="card-image">
+        <img src="images/icon-calculator.svg" alt="Supervisor" />
+      </div>
+    </div>
+</div>
+    <footer>
+      <p class="attribution">Coded by <a href="#">Taha IHMADI</a>.</p>
+    </footer>
+  </body>
+</html>
